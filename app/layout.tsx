@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from "./Components/NavBar";
 
 const metadata: Metadata = {
   title: "Ekiti Tourist Attraction Centre",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <NavBar />
         {children}
       </body>
     </html>

@@ -61,8 +61,8 @@ const NavBar = () => {
             )}
           </div>
 
-          <Link href="/requests" className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
-            Requests
+          <Link href="/about" className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
+            About 
           </Link>
           <Link href="/blogs" className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
             Blogs
@@ -124,8 +124,8 @@ const NavBar = () => {
               )}
             </div>
 
-            <Link href="/requests" className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
-              Requests
+            <Link href="/about" className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
+              About
             </Link>
             <Link href="/blogs" className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
               Blogs
