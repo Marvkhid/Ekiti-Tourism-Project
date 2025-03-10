@@ -159,7 +159,7 @@ const BlogPage = () => {
       </li>
       <li>
         <span className="font-semibold">Olumo Rock:</span> This historical rock in Abeokuta, Ogun State, is a symbol of strength and resilience for the Egba people.
-        Visitors can climb to the top and enjoy a stunning panoramic view of the city while learning about the rock's historical significance.
+        Visitors can climb to the top and enjoy a stunning panoramic view of the city while learning about the rock&apos;s historical significance.
       </li>
       <li>
         <span className="font-semibold">Zuma Rock:</span> Often referred to as the &quot;Gateway to Abuja&quot; ,Zuma Rock is an iconic monolith in Niger State.
