@@ -86,11 +86,11 @@ const BlogPage = () => {
       },
       {
         id: 7,
-        name: "Daniel O'Connor",
+        name: "Daniel Connor",
         country: "United States",
         occupation: "Adventure Tour Guide",
         message:
-          "Hiking through the hills of Ekiti was one of the best outdoor experiences I've had in Africa. The Olosunta Rock offered breathtaking views, and the cultural stories behind these landmarks made the journey even more fascinating!",
+          "Hiking through the hills of Ekiti was one of the best outdoor experiences i had in Africa. The Olosunta Rock offered breathtaking views, and the cultural stories behind these landmarks made the journey even more fascinating!",
       },      
     {
       id: 2,
@@ -162,7 +162,7 @@ const BlogPage = () => {
         Visitors can climb to the top and enjoy a stunning panoramic view of the city while learning about the rock's historical significance.
       </li>
       <li>
-        <span className="font-semibold">Zuma Rock:</span> Often referred to as the "Gateway to Abuja," Zuma Rock is an iconic monolith in Niger State.
+        <span className="font-semibold">Zuma Rock:</span> Often referred to as the &quot;Gateway to Abuja&quot; ,Zuma Rock is an iconic monolith in Niger State.
         It is known for its massive size and unique human-like face markings. It is a must-visit site for photography and cultural exploration.
       </li>
       <li>
@@ -195,7 +195,7 @@ const BlogPage = () => {
     </ul>
 
     <p className="text-lg mt-6">
-      These destinations showcase Nigeria's diverse landscapes and cultural richness. Whether you seek adventure, history, or relaxation,
+      These destinations showcase Nigeria&apos;s diverse landscapes and cultural richness. Whether you seek adventure, history, or relaxation,
       Nigeria has something for everyone. Plan your next trip and explore the beauty of the country!
     </p>
   </div>
