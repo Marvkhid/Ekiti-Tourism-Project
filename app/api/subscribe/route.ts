@@ -9,16 +9,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
     }
 
-    // Configure Nodemailer
     const transporter = nodemailer.createTransport({
-      service: "gmail", // Or use another SMTP provider
+      service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER, // Your email
-        pass: process.env.EMAIL_PASS, // Your app password (not your real password!)
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS, 
       },
     });
 
-    // Email message details
+    
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: email,
@@ -30,11 +29,12 @@ export async function POST(req: NextRequest) {
       `,
     };
 
-    // Send the email
+  
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ message: "Subscription successful!" }, { status: 200 });
-  } catch {
+  } catch (error) {
+    console.error("Email sending error:", error);
     return NextResponse.json({ error: "Failed to subscribe" }, { status: 500 });
   }
 }
