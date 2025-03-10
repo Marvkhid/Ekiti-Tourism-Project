@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ message: "Subscription successful!" }, { status: 200 });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: "Failed to subscribe" }, { status: 500 });
   }
 }

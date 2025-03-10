@@ -1,7 +1,7 @@
-"use client";
-
+'use client';
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const events = [
   {
@@ -67,7 +67,7 @@ const UpcomingEvents = () => {
       } else {
         setMessage("Subscription failed. Try again.");
       }
-    } catch (error) {
+    } catch {
       setMessage("Something went wrong.");
     }
   };
@@ -88,7 +88,15 @@ const UpcomingEvents = () => {
               key={event.id}
               className="min-w-[350px] md:min-w-[500px] lg:min-w-[600px] bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105"
             >
-              <img src={event.image} alt={event.title} className="w-full h-64 md:h-80 lg:h-96 object-cover" />
+              <div className="relative w-full h-64 md:h-80 lg:h-96">
+                <Image
+                  src={event.image}
+                  alt={event.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-t-xl"
+                />
+              </div>
               <div className="p-6 md:p-8">
                 <h3 className="text-lg md:text-2xl font-semibold text-gray-900">{event.title}</h3>
                 <p className="text-sm md:text-lg text-gray-600">{event.date} - {event.location}</p>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Features = () => {
   return (
@@ -11,9 +12,11 @@ const Features = () => {
         <div className="grid gap-6 place-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {/* Ikogosi Warm Spring */}
           <div className="border rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl bg-white max-w-xs">
-            <img
+            <Image
               src="/ikog.jpeg"
               alt="Ikogosi Warm Spring"
+              width={400}
+              height={300}
               className="w-full h-48 sm:h-56 lg:h-64 object-cover transition-all duration-500"
             />
             <div className="p-6">
@@ -29,9 +32,11 @@ const Features = () => {
 
           {/* Arinta Waterfalls */}
           <div className="border rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl bg-white max-w-xs">
-            <img
+            <Image
               src="/arinta.webp"
               alt="Arinta Waterfalls"
+              width={400}
+              height={300}
               className="w-full h-48 sm:h-56 lg:h-64 object-cover transition-all duration-500"
             />
             <div className="p-6">
@@ -47,9 +52,11 @@ const Features = () => {
 
           {/* Fajuyi Memorial Park */}
           <div className="border rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl bg-white max-w-xs">
-            <img
+            <Image
               src="/fajuyi.webp"
               alt="Fajuyi Memorial Park"
+              width={400}
+              height={300}
               className="w-full h-52 sm:h-56 lg:h-64 object-cover transition-all duration-500"
             />
             <div className="p-6">
@@ -65,9 +72,11 @@ const Features = () => {
 
           {/* Ikere Hills */}
           <div className="border rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl bg-white max-w-xs">
-            <img
+            <Image
               src="/ikere.webp"
               alt="Ikere Hills"
+              width={400}
+              height={300}
               className="w-full h-48 sm:h-56 lg:h-64 object-cover transition-all duration-500"
             />
             <div className="p-6">

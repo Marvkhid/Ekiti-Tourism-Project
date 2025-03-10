@@ -18,7 +18,7 @@ const Hero = () => {
     }, 5000); // Change text every 5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [texts.length]); // ✅ Fixed the warning
 
   return (
     <div

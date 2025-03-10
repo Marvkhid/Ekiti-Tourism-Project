@@ -25,18 +25,35 @@ const hotels = [
 export default function HotelsList() {
   return (
     <div className="min-h-screen bg-white mt-4 text-black p-6 overflow-hidden">
-      <h1 className="text-5xl font-extrabold text-center mb-6 text-yellow-500">Best Hotels in Ekiti</h1>
-      <p className="text-lg text-center mb-8 text-gray-700">Find the perfect place to stay with top-rated hotels offering excellent service and comfort.</p>
-      
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-yellow-500">
+        Best Hotels in Ekiti
+      </h1>
+      <p className="text-lg text-center mb-8 text-gray-700">
+        Find the perfect place to stay with top-rated hotels offering excellent service and comfort.
+      </p>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {hotels.map((hotel, index) => (
-          <div key={index} className="bg-white text-black rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
-            <Image src={hotel.image} alt={hotel.name} width={400} height={250} className="w-full h-60 object-cover" />
+          <div
+            key={index}
+            className="bg-white text-black rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105"
+          >
+            <Image
+              src={hotel.image}
+              alt={hotel.name}
+              width={400}
+              height={250}
+              className="w-full h-60 object-cover"
+            />
             <div className="p-5">
               <h2 className="text-2xl font-bold text-purple-900">{hotel.name}</h2>
               <p className="text-md text-gray-600 mt-2">📍 {hotel.location}</p>
-              <p className="text-lg font-semibold text-red-600 mt-2">⭐ {hotel.stars}-Star Hotel</p>
-              <p className="text-gray-700 mt-2 italic">"{hotel.reviews}"</p>
+              <p className="text-lg font-semibold text-red-600 mt-2">
+                ⭐ {hotel.stars}-Star Hotel
+              </p>
+              <p className="text-gray-700 mt-2 italic">
+                &ldquo;{hotel.reviews}&rdquo;
+              </p>
               <Link href={hotel.link}>
                 <button className="mt-4 w-full bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded-full shadow-lg transition-all">
                   Book Now
@@ -46,7 +63,7 @@ export default function HotelsList() {
           </div>
         ))}
       </div>
-      
+
       <Footer />
     </div>
   );
