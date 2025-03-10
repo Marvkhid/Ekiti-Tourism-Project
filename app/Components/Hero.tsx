@@ -5,8 +5,8 @@ import React, { useState, useEffect } from 'react';
 const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
   const texts = [
-    'Looking for a tourist attraction in Ekiti?',
-    'Looking for the best place to relax in Ekiti?',
+    'Your First time in Ekiti?',
+    'Ready to Explore Ekiti?',
     'Are you bored?',
     'Tired of seeing that view over and over again?',
     'Looking for the Best Hotels in Ekiti State?',

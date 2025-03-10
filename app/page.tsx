@@ -4,6 +4,7 @@ import Attractions from './Components/Attractions'
 import UpcomingEvents from './Components/UpcomingEvents'
 import Footer from '@/components/Footer'
 
+
 const page = () => {
   return (
     <div>
