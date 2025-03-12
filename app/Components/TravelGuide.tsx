@@ -27,7 +27,7 @@ const TravelGuide: React.FC = () => {
 
         <div className="p-4 bg-green-100 rounded-lg shadow">
           <h3 className="font-semibold text-green-800">Local Delicacies</h3>
-          <p>Don't miss out on Ekiti&apos;s famous pounded yam with egusi soup. Street food is also a must-try!</p>
+          <p>Don&apos;t miss out on Ekiti&apos;s famous pounded yam with egusi soup. Street food is also a must-try!</p>
         </div>
 
         <div className="p-4 bg-green-100 rounded-lg shadow">
