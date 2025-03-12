@@ -13,7 +13,6 @@ const NavBar: React.FC = () => {
   const mobileDropdownRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
- 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -32,7 +31,6 @@ const NavBar: React.FC = () => {
     };
   }, []);
 
-  
   useEffect(() => {
     setIsDropdownOpen(false);
     setIsMenuOpen(false);
@@ -82,7 +80,6 @@ const NavBar: React.FC = () => {
             )}
           </div>
 
-          
           <Link href="/about" onClick={handleLinkClick} className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">About</Link>
           <Link href="/blogs" onClick={handleLinkClick} className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">Blogs</Link>
           <Link href="/support" onClick={handleLinkClick} className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">Support</Link>
@@ -91,15 +88,15 @@ const NavBar: React.FC = () => {
         {/* Desktop Buttons */}
         <div className="hidden md:flex space-x-4 items-center">
           <Link href="/login" onClick={handleLinkClick}> 
-          <button className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
-            Login
-          </button>
+            <button className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
+              Login
+            </button>
           </Link>
-         
+
           <Link href="/signup" onClick={handleLinkClick}> 
-          <button className="bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600 transition duration-300">
-            Sign Up
-          </button>
+            <button className="bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+              Sign Up
+            </button>
           </Link>
         </div>
 
@@ -151,12 +148,16 @@ const NavBar: React.FC = () => {
             </Link>
 
             {/* Mobile Buttons */}
-            <button className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
-              Login
-            </button>
-            <button className="bg-purple-900 text-white px-5 py-2 rounded-lg hover:bg-purple-700 transition duration-300">
-              Sign Up
-            </button>
+            <Link href="/login" onClick={handleLinkClick}>
+              <button className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
+                Login
+              </button>
+            </Link>
+            <Link href="/signup" onClick={handleLinkClick}>
+              <button className="bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+                Sign Up
+              </button>
+            </Link>
           </div>
         )}
       </nav>
