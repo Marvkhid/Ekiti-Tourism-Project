@@ -28,10 +28,10 @@ const LoginPage = () => {
     <div className="flex items-center justify-center min-h-screen bg-white px-6 py-12">
       <div className="w-full max-w-md p-8 border rounded-lg shadow-lg bg-white">
         <h2 className="text-3xl font-bold text-green-500 text-center mb-6">
-          Welcome to Ekiti Tourism 
+          Welcome to Ekiti Tourism
         </h2>
 
-        <p className="text-gray-900 text-xl text-center mb-6">Log in to explore Ekiti's beauty.</p>
+        <p className="text-gray-900 text-xl text-center mb-6">Log in to explore Ekiti&apos;s beauty.</p>
 
         {error && <p className="text-red-600 text-sm text-center mb-4">{error}</p>}
 
