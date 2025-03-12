@@ -1,4 +1,5 @@
 'use client';
+
 import { HomeIcon } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 
@@ -18,13 +19,13 @@ const Hero = () => {
     }, 5000); // Change text every 5 seconds
 
     return () => clearInterval(interval);
-  }, [texts.length]); // ✅ Fixed the warning
+  }, [texts.length]); 
 
   return (
     <div
       className="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center text-center mb-8 px-4 md:px-16"
       style={{
-        backgroundImage: `url('/ikogosii.jpeg')`,
+        backgroundImage: `url('/ladies.jpg')`,
       }}
     >
       <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-6 md:p-12 max-w-4xl w-full">

@@ -9,7 +9,7 @@ const events = [
     title: "Udiroko Festival",
     date: "August 12, 2025",
     location: "Ado-Ekiti",
-    image: "/udiroko.jpeg",
+    image: "/udiroko.jpg",
     description:
       "A historic Yoruba festival celebrated by the Ado-Ekiti people, marking the beginning of a new year.",
   },
@@ -27,7 +27,7 @@ const events = [
     title: "Ikogosi Festival",
     date: "December 20, 2025",
     location: "Ikogosi Warm Springs",
-    image: "/ikogosidec.jpeg",
+    image: "/ikogosidec.jpg",
     description:
       "An annual event showcasing the warm and cold spring's mystery, cultural displays, and tourism activities.",
   },
@@ -36,7 +36,7 @@ const events = [
     title: "Ewi Festival",
     date: "October 15, 2025",
     location: "Ado-Ekiti Palace",
-    image: "/ewi.jpeg",
+    image: "/ewi.jpg",
     description:
       "A cultural and royal festival that honors the traditions of the Ekiti people.",
   },
