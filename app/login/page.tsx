@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { signIn } from "next-auth/react";
 import { EyeIcon, EyeOffIcon, HomeIcon, Loader2 } from "lucide-react";
 
@@ -31,9 +32,11 @@ const LoginPage = () => {
       } else {
         router.push("/dashboard"); 
       }
-    } catch (err) {
+    }catch (err) {
+      console.error("Login Error:", err); 
       setError("Something went wrong. Try again!");
-    } finally {
+    }
+     finally {
       setLoading(false);
     }
   };
@@ -108,7 +111,7 @@ const LoginPage = () => {
 
         {/* Image Section */}
         <div className="hidden md:flex md:w-1/2 items-center justify-end p-6">
-          <img
+          <Image
             src="/tourism-logo.jpeg"
             width="400"
             height="400"

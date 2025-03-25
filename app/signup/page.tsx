@@ -2,9 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { HomeIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 import axios from "axios";
 
 const statesInNigeria = [
@@ -56,6 +55,7 @@ const SignupPage = () => {
     try {
       await axios.post("/api/auth/signup", formData);
       alert("Signup successful! 🚀");
+      router.push("/dashboard"); // Redirect to the dashboard after signup
     } catch (err: unknown) {
       if (axios.isAxiosError(err)) {
         setError(err.response?.data?.message || "Something went wrong");
@@ -70,6 +70,7 @@ const SignupPage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen px-6 py-12">
       <div className="w-full max-w-5xl rounded-2xl gap-24 shadow-lg flex flex-col md:flex-row overflow-hidden">
+        {/* Form Section */}
         <div className="w-full md:w-1/2 p-10">
           <div className="flex mb-4 max-w-fit mx-auto lg:mx-0 items-center justify-center space-x-3 rounded-full px-7 py-3">
             <HomeIcon className="h-6 w-6 text-green-600" />
@@ -156,6 +157,8 @@ const SignupPage = () => {
             </button>
           </form>
         </div>
+
+        {/* Image Section */}
         <div className="w-full md:w-1/2 flex items-center justify-center p-10">
           <Image src="/tourism-logo.jpeg" alt="Tourism Logo" width={500} height={500} />
         </div>
