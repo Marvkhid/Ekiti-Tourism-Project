@@ -43,7 +43,7 @@ const NavBar: React.FC = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-4 px-6 md:px-24 flex justify-between items-center">
+      <nav className="fixed top-0 left-0 w-full z-50 text-2xl bg-white gap-24 shadow-md py-2 px-6 md:px-24 flex justify-between items-center">
         {/* Logo */}
         <div>
           <Image src="/tourism-logo.jpeg" alt="ekiti-logo" width={80} height={80} className="object-fit" />
@@ -70,8 +70,8 @@ const NavBar: React.FC = () => {
                 <Link href="/attractions/hotels" onClick={handleLinkClick} className="hover:bg-yellow-100 border-gray-700 pb-1 transition-all duration-300">
                   Hotels
                 </Link>
-                <Link href="/attractions/shortlets" onClick={handleLinkClick} className="hover:bg-yellow-100 border-gray-700 pb-1 transition-all duration-300">
-                  Shortlets
+                <Link href="/attractions/foodculture" onClick={handleLinkClick} className="hover:bg-yellow-100 border-gray-700 pb-1 transition-all duration-300">
+                  Food & Culture
                 </Link>
                 <Link href="/attractions/bars-lounge" onClick={handleLinkClick} className="hover:bg-yellow-100 border-gray-700 pb-1 transition-all duration-300">
                   Bars & Lounge
@@ -82,7 +82,7 @@ const NavBar: React.FC = () => {
 
           <Link href="/about" onClick={handleLinkClick} className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">About</Link>
           <Link href="/blogs" onClick={handleLinkClick} className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">Blogs</Link>
-          <Link href="/support" onClick={handleLinkClick} className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">Support</Link>
+          <Link href="/feedback" onClick={handleLinkClick} className="hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">Feedback</Link>
         </div>
 
         {/* Desktop Buttons */}
@@ -127,8 +127,8 @@ const NavBar: React.FC = () => {
                   <Link href="/attractions/hotels" onClick={handleLinkClick} className="hover:bg-yellow-100 border-gray-700 pb-1 transition-all duration-300">
                     Hotels
                   </Link>
-                  <Link href="/attractions/shortlets" onClick={handleLinkClick} className="hover:bg-yellow-100 border-gray-700 pb-1 transition-all duration-300">
-                    Shortlets
+                  <Link href="/attractions/foodculture" onClick={handleLinkClick} className="hover:bg-yellow-100 border-gray-700 pb-1 transition-all duration-300">
+                    Food & Culture
                   </Link>
                   <Link href="/attractions/bars-lounge" onClick={handleLinkClick} className="hover:bg-yellow-100 border-gray-700 pb-1 transition-all duration-300">
                     Bars & Lounge
@@ -143,8 +143,8 @@ const NavBar: React.FC = () => {
             <Link href="/blogs" onClick={handleLinkClick} className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
               Blogs
             </Link>
-            <Link href="/support" onClick={handleLinkClick} className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
-              Support
+            <Link href="/feedback" onClick={handleLinkClick} className="text-gray-700 hover:border-b-2 border-gray-700 pb-1 transition-all duration-300">
+              Feedback
             </Link>
 
             {/* Mobile Buttons */}
