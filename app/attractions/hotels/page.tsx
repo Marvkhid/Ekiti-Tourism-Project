@@ -6,7 +6,7 @@ const hotels = [
   { name: "Delight Hotel & Suites", image: "/delight.jpeg", stars: 5, reviews: "⭐⭐⭐⭐⭐ Excellent service and luxurious rooms.", link: "/book" },
   { name: "Queens Court Hotel", image: "/queens.jpeg", stars: 5, reviews: "⭐⭐⭐⭐⭐ Top-tier hospitality with modern facilities.", link: "/book" },
   { name: "Towlab Hotel & Suites", image: "/towlab.jpeg", stars: 5, reviews: "⭐⭐⭐⭐⭐ Amazing ambiance and world-class comfort.", link: "/book" },
-  { name: "Onikoyi Hotel", image: "/onikoyi.jpg", stars: 5, reviews: "⭐⭐⭐⭐⭐ Home for comfort...", link: "/book" },
+  { name: "Onikoyi Hotel", image: "/onikoyi.jpg", stars: 5, reviews: "⭐⭐⭐⭐⭐ Home for comfort...Improving lives", link: "/book" },
   { name: "Prosperous Royal Hotel & Resort", image: "/prosperous.jpeg", stars: 5, reviews: "⭐⭐⭐⭐⭐ A wonderful stay with exceptional amenities.", link: "/book" },
   { name: "Mauv Haus & Suites", image: "/mauv.jpeg", stars: 5, reviews: "⭐⭐⭐⭐⭐ Highly recommended for business and leisure.", link: "/book" },
   { name: "Foda Palace Hotel", image: "/foda.jpeg", stars: 4, reviews: "⭐⭐⭐⭐ Great customer service and clean rooms.", link: "/book" },

@@ -4,46 +4,45 @@ import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-200 rounded-lg shadow dark:bg-gray-900 m-4">
-      <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <Link
-            href="/"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-          >
-            <Image
-              src="/tourism-logo.jpeg"
-              width={100}
-              height={40}
-              alt="house-dey-logo"
-            />
+    <footer className="bg-white shadow-lg rounded-t-2xl px-6 py-8 md:py-12">
+      <div className="max-w-screen-xl mx-auto">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-6 md:space-y-0">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-3">
+            <Image src="/tourism-logo.jpeg" width={120} height={50} alt="Ekiti Tourism Logo" />
           </Link>
-          <ul className="flex flex-wrap items-center mb-6 text-2xl font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <Link href="/about" className="hover:underline me-4 md:me-6">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy-policy" className="hover:underline me-4 md:me-6">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/support" className="hover:underline">
-                Contact
-              </Link>
-            </li>
-          </ul>
+
+          {/* Navigation Links */}
+          <nav className="flex flex-wrap justify-center gap-6 text-lg font-medium text-green-600">
+            <Link href="/" className="hover:text-green-800 transition duration-300">
+              Home
+            </Link>
+            <Link href="/about" className="hover:text-green-800 transition duration-300">
+              About Us
+            </Link>
+            <Link href="/places" className="hover:text-green-800 transition duration-300">
+              Attractions
+            </Link>
+            <Link href="/events" className="hover:text-green-800 transition duration-300">
+              Events
+            </Link>
+            <Link href="/support" className="hover:text-green-800 transition duration-300">
+              Contact
+            </Link>
+          </nav>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-xl text-gray-500 sm:text-center dark:text-gray-400">
-          &copy; 2024{' '}
-          <Link href="/" className="hover:underline">
+
+        {/* Divider */}
+        <hr className="my-6 border-t border-gray-300" />
+
+        {/* Bottom Text */}
+        <div className="text-center text-gray-600 text-lg">
+          &copy; {new Date().getFullYear()}{" "}
+          <Link href="/" className="font-semibold text-green-600 hover:text-green-800 transition duration-300">
             Ekiti Tourism™
           </Link>
           . All Rights Reserved.
-        </span>
+        </div>
       </div>
     </footer>
   );

@@ -16,7 +16,8 @@ const attractions = [
   { name: "Ogun Onire Grove", image: "/ogun-onire.jpeg", history: "A sacred forest in Ire-Ekiti dedicated to the deity Ogun, the god of iron. It is an important site for traditional worship and cultural festivals." },
   { name: "Ero Dam", image: "/ero-dam.jpeg", history: "A large dam in Ekiti State that supplies water to many towns. It also serves as a fishing hub and an attractive site for nature lovers." },
   { name: "Ogbese River", image: "/ogbese.jpeg", history: "A significant river that runs through Ekiti, serving as an economic resource for fishermen and farmers. The river is surrounded by lush landscapes and offers scenic views." },
-  { name: "Okemesi War Site", image: "/okemesi-war.jpeg", history: "A historical site where the famous Kiriji War took place. It is a reminder of the Yoruba intertribal wars and the resilience of the Ekiti people." }
+  { name: "Okemesi War Site", image: "/okemesi-war.jpeg", history: "A historical site where the famous Kiriji War took place. It is a reminder of the Yoruba intertribal wars and the resilience of the Ekiti people." },
+  { name: "Ikun Diary Farm", image: "/diary.jpg", history: "Established in the early 1980s during President Shehu Shagari administration. The farm was developed as an integrated agro-allied project aimed at job creation and boosting local economy nthrough diary production" }
 ];
 
 export default function Home() {
@@ -29,8 +30,8 @@ export default function Home() {
           <div key={index} className="bg-white text-black rounded-xl shadow-lg overflow-hidden">
             <Image src={place.image} alt={place.name} width={400} height={250} className="w-full h-56 object-cover" />
             <div className="p-4">
-              <h2 className="text-xl font-bold">{place.name}</h2>
-              <p className="text-sm mt-2">{place.history}</p>
+              <h2 className="text-xl text-green-500 font-bold">{place.name}</h2>
+              <p className="text-sm  mt-2">{place.history}</p>
             </div>
           </div>
         ))}
